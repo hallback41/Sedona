@@ -1,0 +1,40 @@
+.button {
+    padding-block: 18px;
+    border: none;
+    text-transform: uppercase;
+    font-family: var(--font-family-bold);
+}
+
+.visually-hidden {
+    @include visually-hidden;
+}
+
+.hidden-mobile {
+    @include mobile-max {
+        display: none !important;
+    }
+}
+
+.hidden-tablet {
+    @include tablet-max {
+        display: none !important;
+    }
+}
+
+.hidden-desktop {
+    @include desktop {
+        display: none !important;
+    }
+}
+
+.visible-mobile {
+    @include mobile-max {
+        display:block;
+    }
+    @include tablet {
+        display: none !important;
+    }
+}
+
+
+

@@ -1,0 +1,34 @@
+:root {
+    --color-black: #000000;
+    --color-light: #ffffff;
+    --color-gray: #766357;
+    --color-gray-alt: #604e43;
+    --color-gray-light: #eeeeee;
+
+    --color-accent: #81b3d2;
+    --color-accent-hover: #669ec0;
+    --color-accent-down: #5496bd;
+    --color-button-dissabled: #dbd8d5;
+
+    --color-input: #f2f2f2;
+    --color-input-hover: #e5e5e5;
+    --color-input-hover-alt: #d5d5d5;
+    --color-input-active: #ffffff;
+
+    --container-width: 1200px;
+    --container-padding-x:40px;
+
+    --button-height: 58px;
+
+    --font-family-base: "Sans-regular", sans-serif;
+    --font-family-bold: "Sans-bold", sans-serif;
+
+
+    --transition-duration: 0.2s;
+
+    --shadow:  0px 0px 42px -10px rgba(0,0,0,0.82);
+
+    @include desktop {
+        --section-padding-x:40px;
+    }
+}

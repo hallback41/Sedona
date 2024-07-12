@@ -1,0 +1,38 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 58px;
+    row-gap: 40px;
+
+    text-align: center;
+    text-transform: uppercase;
+    
+    &__desctiprion {
+        font-family: var(--font-family-bold);
+        
+        &-title {
+            @include mobile-max {
+                font-size: 21px;
+                padding-inline: 20px;
+            }
+        }
+    }
+    
+    &__text {
+        font-size: 14px;
+    
+        @include mobile {
+            padding-inline: 40px;
+        }
+    }
+
+    &__button {
+        width: 460px;
+
+        @include mobile-max {
+            width: 280px;
+            margin-inline: 20px;
+        }
+    }
+}

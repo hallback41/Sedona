@@ -1,0 +1,38 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 120px;
+
+    @include mobile-max {
+        flex-direction: column;
+        padding: 40px 40px;
+        font-size: 21px;
+    }
+
+    &__description {
+        font-family: var(--font-family-bold);
+    }
+
+    &__soc1als{
+        display: flex;
+        column-gap: 12px;
+        padding-block: 36px;
+        
+        &-link {
+            position: relative;
+            @include square(48px);
+            
+            img{
+                @include abs-center;
+            }
+        }
+    
+    &__copyright{
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    }
+}

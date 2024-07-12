@@ -1,0 +1,68 @@
+.header {
+    position: relative;
+    font-family: var(--font-family-bold);
+    text-transform: uppercase;
+    z-index: 1;
+    
+    @include fluid-text(22, 14);
+
+    &__logo {
+        position: absolute;
+        top: 9%;
+        left: 50%; 
+        transform: translate(-60%, -10%);
+    }
+
+    &__image {
+
+        &--desktop{
+            @include tablet-max {
+                display: none;
+            }
+
+        }
+
+        &--tablet {
+            @include mobile-max{
+                transform: translate(0%, 0%);
+                z-index: -1;
+            }
+            @include desktop{
+                display: none;
+            }
+        }
+    }
+
+    &__nav {
+
+        &-list {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &-item {
+
+            &:first-child {
+                padding-inline: 24px;
+            }
+        }
+
+        &-link {
+            display: block;
+            padding: 22px;  
+            
+            @include hover {
+                color: var(--color-accent);
+            }
+
+            &:active {
+                color: var(--color-gray);
+            }
+
+            &:focus {
+                color: var(--color-gray-light       );  
+            }
+        }
+    }   
+}
+

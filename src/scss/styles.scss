@@ -1,0 +1,22 @@
+@import
+    "normilize",
+    "fonts",
+    "mixins",
+    "media",
+    "variables",
+    "utils",
+    "globals";
+
+@import 
+    "blocks/background",
+    "blocks/grid",
+    "blocks/section",
+    "blocks/global-shadow",
+    "blocks/mobile-menu",
+    "blocks/header",
+    "blocks/hero",
+    "blocks/slogan",
+    "blocks/content",
+    "blocks/hotel",
+    "blocks/map",
+    "blocks/footer";

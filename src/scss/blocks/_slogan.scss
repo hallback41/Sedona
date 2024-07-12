@@ -1,0 +1,17 @@
+.slogan {
+    text-align: center;
+    text-transform: uppercase;
+
+    &__desctiprion {
+        font-family: var(--font-family-bold);
+    }
+
+    &__text {
+        font-size: 14px;
+
+        @include mobile {
+            padding-inline: 80px;
+        }
+    }
+
+}

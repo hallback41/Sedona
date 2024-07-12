@@ -1,0 +1,44 @@
+.hero {
+    overflow-x: hidden;
+
+    &__inner {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+    }
+
+    &__image {
+
+        &--background-desktop {
+            align-self: center;
+            min-width: 1200px;
+        }
+
+
+        &--text{
+            max-width: 460px;
+
+            @include abs-center;
+
+            @include mobile-max {
+                max-width: 340px;
+                height: auto;
+            }
+
+        }
+
+        &--footer-desktop {
+            position: absolute;
+            align-self: center;
+            bottom: -1px;
+            min-width: 1200px;
+
+        }
+
+        &--footer-tablet {
+            position: absolute;
+            bottom: -1px;
+        }
+    }
+}
